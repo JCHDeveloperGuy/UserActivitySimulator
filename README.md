@@ -1,3 +1,3 @@
-#UserActivitySimulator
+UserActivitySimulator
 
 
