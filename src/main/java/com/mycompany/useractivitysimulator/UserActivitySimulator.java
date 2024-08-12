@@ -55,10 +55,8 @@ class  myProducer  {
 
         Producer<String, String> producer = new KafkaProducer
                 <String, String>(props);
-
-
+        
         producer.send(new ProducerRecord<String, String>("UserActivitySimulator", "hello from the producer"));
-        //System.out.println('“'Message sent successfully”)
         producer.close();
     }
 }
