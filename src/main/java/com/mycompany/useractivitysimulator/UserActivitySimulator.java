@@ -5,35 +5,45 @@ import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord; 
 import org.apache.kafka.common.serialization.StringSerializer;  
-import java.util.*; 
- 
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class UserActivitySimulator {
 
-    public static void main(String[] args) {
+    private static volatile String strUserName;
+    private static volatile String strUserEvent;
 
-        final List<String> lstUsers = Arrays.asList(
-                "User1",
-                "User2",
-                "User3",
-                "User4",
-                "User5",
-                "User6"
-        );
-        
-        for (int i = 0; i <= lstUsers.size() - 1; i++) {
-            myUser newUser = new myUser();
-            newUser.UserName = lstUsers.get(i);
-            newUser.start();
-        }
+    public static void main(String[] args) throws InterruptedException {
+
+        AtomicInteger intCounter = new AtomicInteger();
+
+        Runnable newUser = () -> {
+            for (int i = 1; i <= 12; i++) {
+                intCounter.incrementAndGet();
+                strUserName = "User" + intCounter.get();
+
+                System.out.println("User " + strUserName + " is instantiated");
+            }
+        };
+
+        Thread myThread = new Thread(newUser);
+
+        myThread.start();
+
+        Thread.sleep(2000);
+
+        myThread.join();
+
+        SelectActivity(myThread);
     }
-}
 
-class myUser extends Thread {
-    String UserName;
+    private static void SelectActivity(Thread thisThread) {
+        String strUserEvent = "this happened";
 
-    @Override
-    public void run() {
-        System.out.println(STR."User is \{UserName}");
+        System.out.println("Thread-" + thisThread.getName() + " " + strUserEvent);
+
+        thisThread.interrupt();
+
     }
 }
 
