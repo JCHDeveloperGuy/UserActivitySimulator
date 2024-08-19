@@ -13,7 +13,6 @@
     </properties>
 
     <distributionManagement>
-
             <repository>
                 <id>Releases</id>
                 <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/Releases</url>
@@ -22,7 +21,6 @@
                 <id>Snapshots</id>
                 <url>ttps://github.com/JCHDeveloperGuy/UserActivitySimulator/Snapshots</url>
             </snapshotRepository>
-      
     </distributionManagement>
 
     <dependencies>
