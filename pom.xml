@@ -14,10 +14,10 @@
 
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>github</id>
-            <url>scp://UserActivitySimulator/maven-publish</url>
-            <layout>default</layout>
+            <repository>
+                <id>releases</id>
+                <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/Releases</url>
+            </repository>
         </repository>
     </distributionManagement>
 
