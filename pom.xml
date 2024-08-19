@@ -12,7 +12,15 @@
         <exec.mainClass>com.mycompany.useractivitysimulator.UserActivitySimulator</exec.mainClass>
     </properties>
 
-
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>github</id>
+            <url>scp://repo/maven2</url>
+            <layout>default</layout>
+        </repository>
+        ...
+    </distributionManagement>
 
     <dependencies>
         
