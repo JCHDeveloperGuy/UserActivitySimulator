@@ -20,7 +20,7 @@
             <snapshotRepository>
                 <id>Snapshots</id>
                 <url>ttps://github.com/JCHDeveloperGuy/UserActivitySimulator/Snapshots</url>
-            </snapshotRepository>
+            </snapshotRepository> 
     </distributionManagement>
 
     <dependencies>
