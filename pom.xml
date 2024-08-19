@@ -14,13 +14,13 @@
 
     <distributionManagement>
             <repository>
-                <id>Releases</id>
-                <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/Releases</url>
+                <id>releases</id>
+                <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/releases</url>
             </repository>
             <snapshotRepository>
                 <id>Snapshots</id>
                 <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/Snapshots</url>
-            </snapshotRepository> 
+            </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
