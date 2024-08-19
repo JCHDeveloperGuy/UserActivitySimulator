@@ -19,8 +19,8 @@
             </repository>
             <snapshotRepository>
                 <id>Snapshots</id>
-                <url>ttps://github.com/JCHDeveloperGuy/UserActivitySimulator/Snapshots</url>
-            </snapshotRepository>
+                <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/Snapshots</url>
+            </snapshotRepository> 
     </distributionManagement>
 
     <dependencies>
