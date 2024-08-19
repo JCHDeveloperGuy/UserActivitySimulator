@@ -18,8 +18,8 @@
                 <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/releases</url>
             </repository>
             <snapshotRepository>
-                <id>Snapshots</id>
-                <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/Snapshots</url>
+                <id>snapshots</id>
+                <url>https://github.com/JCHDeveloperGuy/UserActivitySimulator/snapshots</url>
             </snapshotRepository>
     </distributionManagement>
 
